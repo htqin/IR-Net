@@ -1,6 +1,17 @@
 # IR-Net
 
-This is an Pytorch implementation of our paper "Forward and Backward Information Retention for Accurate Binary Neural Networks".
+This project is the PyTorch implementation of our accepted CVPR 2020 paper : forward and backward information retention for accurate binary neural networks.
+
+Bibtex:
+
+```
+@inproceedings{Qin:cvpr20,
+  author    = {Haotong Qin and Ruihao Gong and Xianglong Liu and Mingzhu Shen and Ziran Wei and Fengwei Yu and Jingkuan Song},
+  title     = {Forward and Backward Information Retention for Accurate Binary Neural Networks},
+  booktitle = {IEEE CVPR},
+  year      = {2020},
+ }
+```
 
 **IR-Net:** We implement our IR-Net using Pytorch because of its high flexibility and powerful automatic differentiation mechanism. When constructing a binarized model, we simply replace the convolutional layers in the origin models with the binary convolutional layer binarized by our method.
 
