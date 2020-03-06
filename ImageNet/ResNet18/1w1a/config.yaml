@@ -1,0 +1,44 @@
+common:
+    model:
+        arch: resnet18
+        kwargs:
+            bn_group_size: 1
+            bn_sync_stats: True
+    
+    augmentation:
+        input_size: 224
+        test_resize: 256
+        colorjitter: [0.2, 0.2, 0.2, 0.1]
+
+    workers: 3
+    batch_size: 64
+
+    lr_scheduler:
+        type: STEP
+
+        lr_steps: [18750, 37500, 56250]
+        lr_mults: [0.1, 0.1, 0.1]
+
+        base_lr: 0.2
+        warmup_steps: 2500
+        warmup_lr: 0.8
+        max_iter: 62500
+    
+    optimizer:
+        type: SGD
+        kwargs:
+            momentum: 0.9
+            weight_decay: 0.00001
+            nesterov: True
+    
+    momentum: 0.9
+    weight_decay: 0.0001
+    nesterov: True
+
+    val_freq: 1000
+    print_freq: 10
+
+    train_root: 
+    train_source: 
+    val_root: 
+    val_source: 
