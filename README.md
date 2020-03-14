@@ -1,6 +1,6 @@
 # IR-Net
 
-This project is the PyTorch implementation of our accepted CVPR 2020 paper : forward and backward information retention for accurate binary neural networks.
+This project is the PyTorch implementation of our accepted CVPR 2020 paper : forward and backward information retention for accurate binary neural networks. [[PDF](  https://htqin.github.io/Pubs/QIN_CVPR2020_6014.pdf )]
 
 Bibtex:
 
